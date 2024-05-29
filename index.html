@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini project</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#details">Task Details</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#create">Create Task</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#edit">Edit Task</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#register">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#login">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Home Page -->
+<section id="home" class="container my-5">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome To the mini project!</h1>
+  </div>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpCrYfOtY31HB0NNkmXC5s9DVZLESaAA55ND20xhy9GkCIdsK1eN7I69IHz" crossorigin="anonymous"></script>
+    <section class="container my-5">
+        <h2 class="mb-4 text-center">Our Services</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="p-3 bg-light">
+                    <img src="plumber.jpg" alt="Plumbing Service" class="img-fluid rounded-circle mb-3">
+                    <h3 class="mt-3 text-center">Plumbing</h3>
+                    <p class="text-center">High-quality plumbing repairs and installations from leaky faucets to pipeline fixes.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-3 bg-light">
+                    <img src="electricity.webp" alt="Electrical Service" class="img-fluid rounded-circle mb-3">
+                    <h3 class="mt-3 text-center">Electrical</h3>
+                    <p class="text-center">Safe and reliable electrical services to meet all your home wiring and lighting needs.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-3 bg-light">
+                    <img src="carpentry.jpg" alt="Carpentry Service" class="img-fluid rounded-circle mb-3">
+                    <h3 class="mt-3 text-center">Carpentry</h3>
+                    <p class="text-center">Craftsmanship at its finest for furniture repairs, installations, and custom woodwork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- Task Dashboard Page -->
+<section id="dashboard" class="container my-5">
+  <h2>Task Dashboard</h2>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Task 1</h5>
+      <p class="card-text">Description of task 1.</p>
+      <button class="btn btn-primary">Edit</button>
+      <button class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+  <!-- Add more cards for additional tasks -->
+</section>
+
+<!-- Task Details Page -->
+<section id="details" class="container my-5">
+  <h2>Task Details</h2>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Task Title</h5>
+      <p class="card-text">Detailed description of the task.</p>
+      <form>
+        <div class="form-group">
+          <label for="taskTitle">Task Title</label>
+          <input type="text" class="form-control" id="taskTitle" value="Sample Task Title">
+        </div>
+        <div class="form-group">
+          <label for="taskDescription">Task Description</label>
+          <textarea class="form-control" id="taskDescription">Sample Task Description</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Task Creation Page -->
+<section id="create" class="container my-5">
+  <h2>Create New Task</h2>
+  <form>
+    <div class="form-group">
+      <label for="newTaskTitle">Task Title</label>
+      <input type="text" class="form-control" id="newTaskTitle">
+    </div>
+    <div class="form-group">
+      <label for="newTaskDescription">Task Description</label>
+      <textarea class="form-control" id="newTaskDescription"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Task</button>
+  </form>
+</section>
+
+<!-- Task Editing Page -->
+<section id="edit" class="container my-5">
+  <h2>Edit Task</h2>
+  <form>
+    <div class="form-group">
+      <label for="editTaskTitle">Task Title</label>
+      <input type="text" class="form-control" id="editTaskTitle" value="Existing Task Title">
+    </div>
+    <div class="form-group">
+      <label for="editTaskDescription">Task Description</label>
+      <textarea class="form-control" id="editTaskDescription">Existing Task Description</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+  </form>
+</section>
+
+<!-- Register Page -->
+<section id="register" class="container my-5">
+  <h2>Register</h2>
+  <form>
+    <div class="form-group">
+      <label for="registerUsername">Username</label>
+      <input type="text" class="form-control" id="registerUsername">
+    </div>
+    <div class="form-group">
+      <label for="registerEmail">Email address</label>
+      <input type="email" class="form-control" id="registerEmail">
+    </div>
+    <div class="form-group">
+      <label for="registerPassword">Password</label>
+      <input type="password" class="form-control" id="registerPassword">
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</section>
+
+<!-- Authentication Page -->
+<section id="login" class="container my-5">
+  <h2>Login</h2>
+  <form>
+    <div class="form-group">
+      <label for="loginUsername">Username</label>
+      <input type="text" class="form-control" id="loginUsername">
+    </div>
+    <div class="form-group">
+      <label for="loginPassword">Password</label>
+      <input type="password" class="form-control" id="loginPassword">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</section>
+
+<!-- Carousel Component -->
+<section id="carousel" class="container my-5">
+  <h2>Featured Tasks</h2>
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="electricity.webp" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="plumber.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="carpentry.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
